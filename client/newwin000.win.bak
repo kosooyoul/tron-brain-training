@@ -1,0 +1,4380 @@
+#OBJ       newwin000
+ #TYPE       WSCmainWindow
+ #PARENT   NULL
+ #RES      userValue
+300
+ #RES      titleString
+title1
+ #RES      width
+240
+ #RES      height
+300
+ #RES      vis
+1
+
+#OBJ       frame_game1
+ #TYPE       WSCtform
+ #PARENT   newwin000
+ #RES      x
+0
+ #RES      y
+0
+ #RES      width
+240
+ #RES      height
+300
+ #RES      foreColor
+#ffffff
+ #RES      backColor
+#4080ff
+ #RES      topShadowColor
+#80c0ff
+ #RES      bottomShadowColor
+#0040c0
+ #RES      shadowType
+-1
+
+#OBJ       newvlab_020
+ #TYPE       WSCvlabel
+ #PARENT   frame_game1
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#404040
+ #RES      bottomShadowColor
+#000000
+ #RES      labelString
+Calculation
+ #RES      vis
+1
+ #RES      y
+91
+ #RES      width
+240
+ #RES      height
+39
+ #RES      foreColor
+#000000
+
+#OBJ       label_oprnd2
+ #TYPE       WSCvkslabel
+ #PARENT   frame_game1
+ #RES      emboss
+1
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#000000
+ #RES      bottomShadowColor
+#000000
+ #RES      emboss
+1
+ #RES      labelString
+55
+ #RES      vis
+1
+ #RES      x
+138
+ #RES      y
+99
+ #RES      width
+39
+ #RES      height
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       label_level1
+ #TYPE       WSCvlabel
+ #PARENT   frame_game1
+ #RES      backColor
+#ffff00
+ #RES      topShadowColor
+#ffff40
+ #RES      bottomShadowColor
+#c0c000
+ #RES      labelString
+1
+ #RES      vis
+1
+ #RES      x
+71
+ #RES      y
+24
+ #RES      width
+36
+ #RES      height
+24
+ #RES      foreColor
+#0000ff
+
+#OBJ       label_oprnd1
+ #TYPE       WSCvkslabel
+ #PARENT   frame_game1
+ #RES      cursorPos
+2
+ #RES      emboss
+1
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#000000
+ #RES      bottomShadowColor
+#000000
+ #RES      emboss
+1
+ #RES      labelString
+55
+ #RES      vis
+1
+ #RES      x
+78
+ #RES      y
+99
+ #RES      width
+34
+ #RES      height
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       label_operter
+ #TYPE       WSCvkslabel
+ #PARENT   frame_game1
+ #RES      cursorPos
+1
+ #RES      emboss
+1
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#000000
+ #RES      bottomShadowColor
+#000000
+ #RES      emboss
+1
+ #RES      labelString
++
+ #RES      vis
+1
+ #RES      x
+113
+ #RES      y
+99
+ #RES      width
+22
+ #RES      height
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       text_ans1
+ #TYPE       WSCvifield
+ #PARENT   frame_game1
+ #RES      cursorPos
+1
+ #RES      emboss
+1
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      emboss
+1
+ #RES      labelString
+0
+ #RES      maxLength
+5
+ #RES      vis
+1
+ #RES      y
+149
+ #RES      width
+240
+ #RES      height
+25
+ #RES      foreColor
+#ff0000
+
+#OBJ       frame_input1
+ #TYPE       WSCtform
+ #PARENT   frame_game1
+ #RES      x
+0
+ #RES      y
+198
+ #RES      width
+240
+ #RES      height
+78
+ #RES      foreColor
+#ffffff
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#000000
+ #RES      shadowType
+-1
+ #RES      vis
+1
+
+#OBJ       newvfbt_031
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input1
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#000000
+ #RES      bottomShadowColor
+#ffffff
+ #RES      labelString
+LOGIN
+ #RES      vis
+1
+ #RES      x
+70
+ #RES      y
+160
+ #RES      width
+120
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       newvfbt_032
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input1
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#000000
+ #RES      bottomShadowColor
+#ffffff
+ #RES      labelString
+LOGIN
+ #RES      vis
+1
+ #RES      x
+70
+ #RES      y
+160
+ #RES      width
+120
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       newvfbt_033
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input1
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#000000
+ #RES      bottomShadowColor
+#ffffff
+ #RES      labelString
+LOGIN
+ #RES      vis
+1
+ #RES      x
+70
+ #RES      y
+160
+ #RES      width
+120
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       num1_1
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input1
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num1_1_click.cpp
+
+ #RES      backColor
+#c0ffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#80c0c0
+ #RES      labelString
+1
+ #RES      vis
+1
+ #RES      x
+2
+ #RES      y
+2
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num1_2
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input1
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num1_2_click.cpp
+
+ #RES      backColor
+#80ffff
+ #RES      topShadowColor
+#c0ffff
+ #RES      bottomShadowColor
+#40c0c0
+ #RES      labelString
+2
+ #RES      vis
+1
+ #RES      x
+40
+ #RES      y
+2
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num1_3
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input1
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num1_3_click.cpp
+
+ #RES      backColor
+#40ffff
+ #RES      topShadowColor
+#80ffff
+ #RES      bottomShadowColor
+#00c0c0
+ #RES      labelString
+3
+ #RES      vis
+1
+ #RES      x
+78
+ #RES      y
+2
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num1_4
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input1
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num1_4_click.cpp
+
+ #RES      backColor
+#00ffff
+ #RES      topShadowColor
+#40ffff
+ #RES      bottomShadowColor
+#00c0c0
+ #RES      labelString
+4
+ #RES      vis
+1
+ #RES      x
+116
+ #RES      y
+2
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num1_5
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input1
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num1_5_click.cpp
+
+ #RES      backColor
+#00ffc0
+ #RES      topShadowColor
+#40ffff
+ #RES      bottomShadowColor
+#00c080
+ #RES      labelString
+5
+ #RES      vis
+1
+ #RES      x
+154
+ #RES      y
+2
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num1_6
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input1
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num1_6_click.cpp
+
+ #RES      backColor
+#00ffc0
+ #RES      topShadowColor
+#40ffff
+ #RES      bottomShadowColor
+#00c080
+ #RES      labelString
+6
+ #RES      vis
+1
+ #RES      x
+2
+ #RES      y
+40
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num1_7
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input1
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num1_7_click.cpp
+
+ #RES      backColor
+#00ffff
+ #RES      topShadowColor
+#40ffff
+ #RES      bottomShadowColor
+#00c0c0
+ #RES      labelString
+7
+ #RES      vis
+1
+ #RES      x
+40
+ #RES      y
+40
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num1_8
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input1
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num1_8_click.cpp
+
+ #RES      backColor
+#40ffff
+ #RES      topShadowColor
+#80ffff
+ #RES      bottomShadowColor
+#00c0c0
+ #RES      labelString
+8
+ #RES      vis
+1
+ #RES      x
+78
+ #RES      y
+40
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num1_9
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input1
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num1_9_click.cpp
+
+ #RES      backColor
+#80ffff
+ #RES      topShadowColor
+#c0ffff
+ #RES      bottomShadowColor
+#40c0c0
+ #RES      labelString
+9
+ #RES      vis
+1
+ #RES      x
+116
+ #RES      y
+40
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num1_0
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input1
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num1_0_click.cpp
+
+ #RES      backColor
+#c0ffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#80c0c0
+ #RES      labelString
+0
+ #RES      vis
+1
+ #RES      x
+154
+ #RES      y
+40
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num1_c
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input1
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num1_c_click.cpp
+
+ #RES      backColor
+#ffc000
+ #RES      topShadowColor
+#ffff40
+ #RES      bottomShadowColor
+#c08000
+ #RES      labelString
+CLR
+ #RES      vis
+1
+ #RES      x
+192
+ #RES      y
+2
+ #RES      width
+46
+ #RES      height
+74
+ #RES      foreColor
+#ff0000
+
+#OBJ       btn_giveup1
+ #TYPE       WSCvfbtn
+ #PARENT   frame_game1
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_giveup1_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+>> GIVE UP & GO TO MENU <<
+ #RES      vis
+1
+ #RES      y
+276
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       label_timer1
+ #TYPE       WSCvlabel
+ #PARENT   frame_game1
+ #RES      backColor
+#c0c040
+ #RES      topShadowColor
+#ffff80
+ #RES      bottomShadowColor
+#808000
+ #RES      vis
+1
+ #RES      x
+178
+ #RES      y
+24
+ #RES      width
+62
+ #RES      height
+24
+ #RES      foreColor
+#c00000
+
+#OBJ       label_point1
+ #TYPE       WSCvlabel
+ #PARENT   frame_game1
+ #RES      backColor
+#ffc080
+ #RES      topShadowColor
+#ffffc0
+ #RES      bottomShadowColor
+#c08040
+ #RES      labelString
+0
+ #RES      vis
+1
+ #RES      x
+108
+ #RES      y
+48
+ #RES      width
+132
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       msg1
+ #TYPE       WSCtform
+ #PARENT   frame_game1
+ #RES      x
+0
+ #RES      y
+81
+ #RES      width
+240
+ #RES      height
+57
+ #RES      foreColor
+#0000ff
+ #RES      backColor
+#80c080
+ #RES      topShadowColor
+#c0ffc0
+ #RES      bottomShadowColor
+#408040
+ #RES      shadowType
+-1
+
+#OBJ       msgok1
+ #TYPE       WSCvfbtn
+ #PARENT   msg1
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_msgok1_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+>> OK <<
+ #RES      vis
+1
+ #RES      y
+30
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       sdap1
+ #TYPE       WSCvlabel
+ #PARENT   msg1
+ #RES      backColor
+#80c040
+ #RES      topShadowColor
+#c0ff80
+ #RES      bottomShadowColor
+#408000
+ #RES      vis
+1
+ #RES      y
+3
+ #RES      width
+240
+ #RES      height
+24
+
+#OBJ       newvlab_016
+ #TYPE       WSCvlabel
+ #PARENT   frame_game1
+ #RES      backColor
+#ffc000
+ #RES      topShadowColor
+#ffff40
+ #RES      bottomShadowColor
+#c08000
+ #RES      labelString
+GAME
+ #RES      vis
+1
+ #RES      y
+24
+ #RES      width
+71
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       newvlab_017
+ #TYPE       WSCvlabel
+ #PARENT   frame_game1
+ #RES      backColor
+#c0c000
+ #RES      topShadowColor
+#ffff40
+ #RES      bottomShadowColor
+#808000
+ #RES      labelString
+TIMER
+ #RES      vis
+1
+ #RES      x
+107
+ #RES      y
+24
+ #RES      width
+71
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       label_title1
+ #TYPE       WSCvlabel
+ #PARENT   frame_game1
+ #RES      backColor
+#c0ff00
+ #RES      topShadowColor
+#ffff40
+ #RES      bottomShadowColor
+#80c000
+ #RES      labelString
+* Calculation *
+ #RES      vis
+1
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       timer1
+ #TYPE       WSCvtimer
+ #PARENT   frame_game1
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   timer1_timer.cpp
+
+ #RES      interval
+40
+ #RES      vis
+1
+ #RES      x
+159
+ #RES      y
+1
+ #RES      width
+80
+
+#OBJ       newvlab_018
+ #TYPE       WSCvlabel
+ #PARENT   frame_game1
+ #RES      backColor
+#ff8080
+ #RES      topShadowColor
+#ffc0c0
+ #RES      bottomShadowColor
+#c04040
+ #RES      labelString
+POINT
+ #RES      vis
+1
+ #RES      y
+48
+ #RES      width
+108
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       newvlab_019
+ #TYPE       WSCvlabel
+ #PARENT   frame_game1
+ #RES      backColor
+#c0ff00
+ #RES      topShadowColor
+#ffff40
+ #RES      bottomShadowColor
+#80c000
+ #RES      labelString
+INPUT NUMBER KEY
+ #RES      vis
+1
+ #RES      y
+174
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       frame_index
+ #TYPE       WSCtform
+ #PARENT   newwin000
+ #RES      x
+0
+ #RES      y
+0
+ #RES      width
+240
+ #RES      height
+300
+ #RES      foreColor
+#ffffff
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#404040
+ #RES      bottomShadowColor
+#000000
+ #RES      shadowType
+-1
+ #RES      vis
+1
+
+#OBJ       newvima_000
+ #TYPE       WSCvimage
+ #PARENT   frame_index
+ #RES      shadowType
+-1
+ #RES      labelPixmap
+C:/popu/images/index.png
+ #RES      vis
+1
+ #RES      width
+240
+ #RES      height
+300
+
+#OBJ       btn_login
+ #TYPE       WSCvfbtn
+ #PARENT   frame_index
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_login_click.cpp
+
+ #RES      shadowThickness
+0
+ #RES      backColor
+#282828
+ #RES      topShadowColor
+#505050
+ #RES      bottomShadowColor
+#000000
+ #RES      labelPixmap
+C:/popu/images/btn1.png
+ #RES      vis
+1
+ #RES      x
+83
+ #RES      y
+164
+ #RES      width
+60
+ #RES      height
+20
+ #RES      foreColor
+#ffffff
+
+#OBJ       btn_join
+ #TYPE       WSCvfbtn
+ #PARENT   frame_index
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_join_click.cpp
+
+ #RES      shadowThickness
+1
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#282828
+ #RES      bottomShadowColor
+#000000
+ #RES      labelPixmap
+C:/popu/images/btn2.png
+ #RES      vis
+1
+ #RES      x
+40
+ #RES      y
+276
+ #RES      width
+50
+ #RES      height
+20
+ #RES      foreColor
+#ffffff
+
+#OBJ       btn_lost
+ #TYPE       WSCvfbtn
+ #PARENT   frame_index
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_lost_click.cpp
+
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#282828
+ #RES      bottomShadowColor
+#000000
+ #RES      labelPixmap
+C:/popu/images/btn3.png
+ #RES      vis
+1
+ #RES      x
+145
+ #RES      y
+276
+ #RES      width
+90
+ #RES      height
+20
+ #RES      foreColor
+#ffffff
+
+#OBJ       text_id
+ #TYPE       WSCvifield
+ #PARENT   frame_index
+ #RES      cursorPos
+6
+ #RES      emboss
+1
+ #RES      shadowType
+0
+ #RES      shadowThickness
+0
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      emboss
+1
+ #RES      labelString
+ahyane
+ #RES      maxLength
+20
+ #RES      labelPixmap
+C:/popu/images/text1.png
+ #RES      vis
+1
+ #RES      x
+68
+ #RES      y
+102
+ #RES      width
+115
+ #RES      height
+20
+ #RES      foreColor
+#ffffff
+
+#OBJ       text_pass
+ #TYPE       WSCvpifield
+ #PARENT   frame_index
+ #RES      cursorPos
+5
+ #RES      emboss
+1
+ #RES      shadowType
+0
+ #RES      shadowThickness
+0
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      emboss
+1
+ #RES      labelString
+alpha
+ #RES      maxLength
+20
+ #RES      labelPixmap
+C:/popu/images/text2.png
+ #RES      vis
+1
+ #RES      x
+54
+ #RES      y
+129
+ #RES      height
+20
+ #RES      foreColor
+#ffffff
+
+#OBJ       frame_menu
+ #TYPE       WSCtform
+ #PARENT   newwin000
+ #RES      titleString
+GAME MENU
+ #RES      x
+0
+ #RES      y
+0
+ #RES      width
+240
+ #RES      height
+300
+ #RES      foreColor
+#ffffff
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#404040
+ #RES      bottomShadowColor
+#000000
+ #RES      shadowType
+-1
+
+#OBJ       newvima_001
+ #TYPE       WSCvimage
+ #PARENT   frame_menu
+ #RES      shadowType
+-1
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#404040
+ #RES      bottomShadowColor
+#000000
+ #RES      labelPixmap
+C:\Documents and Settings\js203\바탕 화면\인처\menu.png
+ #RES      vis
+1
+ #RES      width
+240
+ #RES      height
+300
+
+#OBJ       btn_game1
+ #TYPE       WSCvfbtn
+ #PARENT   frame_menu
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_game1_click.cpp
+
+ #RES      shadowThickness
+0
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelPixmap
+C:/popu/images/btn4.png
+ #RES      vis
+1
+ #RES      x
+30
+ #RES      y
+55
+ #RES      width
+150
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       btn_game2
+ #TYPE       WSCvfbtn
+ #PARENT   frame_menu
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_game2_click.cpp
+
+ #RES      shadowThickness
+0
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelPixmap
+C:/popu/images/btn5.png
+ #RES      vis
+1
+ #RES      x
+30
+ #RES      y
+101
+ #RES      width
+150
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       btn_game3
+ #TYPE       WSCvfbtn
+ #PARENT   frame_menu
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_game3_click.cpp
+
+ #RES      shadowThickness
+0
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelPixmap
+C:/popu/images/btn6.png
+ #RES      vis
+1
+ #RES      x
+30
+ #RES      y
+146
+ #RES      width
+150
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       btn_gotoindex
+ #TYPE       WSCvfbtn
+ #PARENT   frame_menu
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_gotoindex_click.cpp
+
+ #RES      shadowThickness
+0
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#404040
+ #RES      bottomShadowColor
+#000000
+ #RES      labelPixmap
+C:/popu/images/btn8.png
+ #RES      vis
+1
+ #RES      x
+7
+ #RES      y
+269
+ #RES      width
+44
+ #RES      height
+22
+ #RES      foreColor
+#000000
+
+#OBJ       btn_myrecord
+ #TYPE       WSCvfbtn
+ #PARENT   frame_menu
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_myrecord_click.cpp
+
+ #RES      shadowThickness
+0
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelPixmap
+C:/popu/images/btn7.png
+ #RES      vis
+1
+ #RES      x
+30
+ #RES      y
+190
+ #RES      width
+150
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       newvima_092
+ #TYPE       WSCvimage
+ #PARENT   frame_menu
+ #RES      shadowType
+-1
+ #RES      labelPixmap
+C:/popu/images/icon1.png
+ #RES      vis
+1
+ #RES      x
+181
+ #RES      y
+48
+ #RES      width
+25
+ #RES      height
+38
+
+#OBJ       frame_game2
+ #TYPE       WSCtform
+ #PARENT   newwin000
+ #RES      x
+0
+ #RES      y
+0
+ #RES      width
+240
+ #RES      height
+300
+ #RES      foreColor
+#ffffff
+ #RES      backColor
+#c0c080
+ #RES      topShadowColor
+#ffffc0
+ #RES      bottomShadowColor
+#808040
+ #RES      shadowType
+-1
+
+#OBJ       inputpoint
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      vis
+1
+ #RES      x
+300
+ #RES      y
+41
+ #RES      width
+27
+ #RES      height
+24
+
+#OBJ       btn_giveup2
+ #TYPE       WSCvfbtn
+ #PARENT   frame_game2
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_giveup2_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+>> GIVE UP & GO TO MENU <<
+ #RES      vis
+1
+ #RES      y
+275
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       frame_input3
+ #TYPE       WSCtform
+ #PARENT   frame_game2
+ #RES      x
+0
+ #RES      y
+196
+ #RES      width
+240
+ #RES      height
+78
+ #RES      foreColor
+#808040
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#404040
+ #RES      bottomShadowColor
+#000000
+ #RES      shadowType
+-1
+
+#OBJ       newvfbt_089
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input3
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#000000
+ #RES      bottomShadowColor
+#ffffff
+ #RES      labelString
+LOGIN
+ #RES      vis
+1
+ #RES      x
+70
+ #RES      y
+160
+ #RES      width
+120
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       newvfbt_090
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input3
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#000000
+ #RES      bottomShadowColor
+#ffffff
+ #RES      labelString
+LOGIN
+ #RES      vis
+1
+ #RES      x
+70
+ #RES      y
+160
+ #RES      width
+120
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       newvfbt_091
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input3
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#000000
+ #RES      bottomShadowColor
+#ffffff
+ #RES      labelString
+LOGIN
+ #RES      vis
+1
+ #RES      x
+70
+ #RES      y
+160
+ #RES      width
+120
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       num3_1
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input3
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num3_1_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+1
+ #RES      vis
+1
+ #RES      x
+2
+ #RES      y
+2
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num3_2
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input3
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num3_2_click.cpp
+
+ #RES      backColor
+#ffffc0
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c080
+ #RES      labelString
+2
+ #RES      vis
+1
+ #RES      x
+40
+ #RES      y
+2
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num3_3
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input3
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num3_3_click.cpp
+
+ #RES      backColor
+#ffff80
+ #RES      topShadowColor
+#ffffc0
+ #RES      bottomShadowColor
+#c0c040
+ #RES      labelString
+3
+ #RES      vis
+1
+ #RES      x
+78
+ #RES      y
+2
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num3_4
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input3
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num3_4_click.cpp
+
+ #RES      backColor
+#ffff40
+ #RES      topShadowColor
+#ffff80
+ #RES      bottomShadowColor
+#c0c000
+ #RES      labelString
+4
+ #RES      vis
+1
+ #RES      x
+116
+ #RES      y
+2
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num3_5
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input3
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num3_5_click.cpp
+
+ #RES      backColor
+#ffff00
+ #RES      topShadowColor
+#ffff40
+ #RES      bottomShadowColor
+#c0c000
+ #RES      labelString
+5
+ #RES      vis
+1
+ #RES      x
+154
+ #RES      y
+2
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num3_6
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input3
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num3_6_click.cpp
+
+ #RES      backColor
+#ffff00
+ #RES      topShadowColor
+#ffff40
+ #RES      bottomShadowColor
+#c0c000
+ #RES      labelString
+6
+ #RES      vis
+1
+ #RES      x
+2
+ #RES      y
+40
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num3_7
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input3
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num3_7_click.cpp
+
+ #RES      backColor
+#ffff40
+ #RES      topShadowColor
+#ffff80
+ #RES      bottomShadowColor
+#c0c000
+ #RES      labelString
+7
+ #RES      vis
+1
+ #RES      x
+40
+ #RES      y
+40
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num3_8
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input3
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num3_8_click.cpp
+
+ #RES      backColor
+#ffff80
+ #RES      topShadowColor
+#ffffc0
+ #RES      bottomShadowColor
+#c0c040
+ #RES      labelString
+8
+ #RES      vis
+1
+ #RES      x
+78
+ #RES      y
+40
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num3_9
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input3
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num3_9_click.cpp
+
+ #RES      backColor
+#ffffc0
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c080
+ #RES      labelString
+9
+ #RES      vis
+1
+ #RES      x
+116
+ #RES      y
+40
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num3_0
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input3
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num3_0_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+0
+ #RES      vis
+1
+ #RES      x
+154
+ #RES      y
+40
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num3_c
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input3
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num3_c_click.cpp
+
+ #RES      backColor
+#ffc000
+ #RES      topShadowColor
+#ffff40
+ #RES      bottomShadowColor
+#c08000
+ #RES      labelString
+BS
+ #RES      vis
+1
+ #RES      x
+192
+ #RES      y
+2
+ #RES      width
+46
+ #RES      height
+74
+ #RES      foreColor
+#ff0000
+
+#OBJ       label_point3
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#c0ffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#80c0c0
+ #RES      labelString
+0
+ #RES      vis
+1
+ #RES      x
+106
+ #RES      y
+49
+ #RES      width
+134
+ #RES      height
+24
+ #RES      foreColor
+#c0ffff
+
+#OBJ       label_title3
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#c0c040
+ #RES      topShadowColor
+#ffff80
+ #RES      bottomShadowColor
+#808000
+ #RES      labelString
+* Returntire Power *
+ #RES      vis
+1
+ #RES      x
+1
+ #RES      y
+1
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       timer3
+ #TYPE       WSCvtimer
+ #PARENT   frame_game2
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   timer3_timer.cpp
+
+ #RES      interval
+40
+ #RES      vis
+1
+ #RES      x
+182
+ #RES      y
+1
+ #RES      width
+57
+
+#OBJ       label_level3
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      userValue
+1
+ #RES      backColor
+#ffff80
+ #RES      topShadowColor
+#ffffc0
+ #RES      bottomShadowColor
+#c0c040
+ #RES      labelString
+1
+ #RES      vis
+1
+ #RES      x
+68
+ #RES      y
+25
+ #RES      width
+43
+ #RES      height
+24
+ #RES      foreColor
+#0000ff
+
+#OBJ       label_timer3
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#ffc0ff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c080c0
+ #RES      vis
+1
+ #RES      x
+180
+ #RES      y
+25
+ #RES      width
+60
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       card0
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#400040
+ #RES      topShadowColor
+#804080
+ #RES      bottomShadowColor
+#000000
+ #RES      labelString
+1
+ #RES      vis
+1
+ #RES      x
+17
+ #RES      y
+90
+ #RES      width
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       card1
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#400040
+ #RES      topShadowColor
+#804080
+ #RES      bottomShadowColor
+#000000
+ #RES      vis
+1
+ #RES      x
+42
+ #RES      y
+90
+ #RES      width
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       card2
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#400040
+ #RES      topShadowColor
+#804080
+ #RES      bottomShadowColor
+#000000
+ #RES      vis
+1
+ #RES      x
+67
+ #RES      y
+90
+ #RES      width
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       card3
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#400040
+ #RES      topShadowColor
+#804080
+ #RES      bottomShadowColor
+#000000
+ #RES      vis
+1
+ #RES      x
+92
+ #RES      y
+90
+ #RES      width
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       card4
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#400040
+ #RES      topShadowColor
+#804080
+ #RES      bottomShadowColor
+#000000
+ #RES      vis
+1
+ #RES      x
+117
+ #RES      y
+90
+ #RES      width
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       card5
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#400040
+ #RES      topShadowColor
+#804080
+ #RES      bottomShadowColor
+#000000
+ #RES      vis
+1
+ #RES      x
+97
+ #RES      y
+130
+ #RES      width
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       card6
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#400040
+ #RES      topShadowColor
+#804080
+ #RES      bottomShadowColor
+#000000
+ #RES      vis
+1
+ #RES      x
+122
+ #RES      y
+130
+ #RES      width
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       card7
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#400040
+ #RES      topShadowColor
+#804080
+ #RES      bottomShadowColor
+#000000
+ #RES      vis
+1
+ #RES      x
+147
+ #RES      y
+130
+ #RES      width
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       card8
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#400040
+ #RES      topShadowColor
+#804080
+ #RES      bottomShadowColor
+#000000
+ #RES      vis
+1
+ #RES      x
+172
+ #RES      y
+130
+ #RES      width
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       card9
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#400040
+ #RES      topShadowColor
+#804080
+ #RES      bottomShadowColor
+#000000
+ #RES      vis
+1
+ #RES      x
+197
+ #RES      y
+130
+ #RES      width
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       msg3
+ #TYPE       WSCtform
+ #PARENT   frame_game2
+ #RES      x
+0
+ #RES      y
+94
+ #RES      width
+240
+ #RES      height
+61
+ #RES      foreColor
+#0000ff
+ #RES      backColor
+#004040
+ #RES      topShadowColor
+#408080
+ #RES      bottomShadowColor
+#000000
+ #RES      shadowType
+-1
+
+#OBJ       msgok3
+ #TYPE       WSCvfbtn
+ #PARENT   msg3
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_msgok3_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+>> OK <<
+ #RES      vis
+1
+ #RES      y
+33
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       sdap3
+ #TYPE       WSCvlabel
+ #PARENT   msg3
+ #RES      backColor
+#008080
+ #RES      topShadowColor
+#40c0c0
+ #RES      bottomShadowColor
+#004040
+ #RES      vis
+1
+ #RES      y
+3
+ #RES      width
+240
+ #RES      height
+25
+
+#OBJ       newvlab_005
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#ffc000
+ #RES      topShadowColor
+#ffff40
+ #RES      bottomShadowColor
+#c08000
+ #RES      labelString
+GAME
+ #RES      vis
+1
+ #RES      y
+25
+ #RES      width
+71
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       newvlab_007
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#ff80c0
+ #RES      topShadowColor
+#ffc0ff
+ #RES      bottomShadowColor
+#c04080
+ #RES      labelString
+TIMER
+ #RES      vis
+1
+ #RES      x
+109
+ #RES      y
+25
+ #RES      width
+74
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       newvlab_010
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#80c0ff
+ #RES      topShadowColor
+#c0ffff
+ #RES      bottomShadowColor
+#4080c0
+ #RES      labelString
+POINT
+ #RES      vis
+1
+ #RES      y
+49
+ #RES      width
+111
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       label_notice3
+ #TYPE       WSCvlabel
+ #PARENT   frame_game2
+ #RES      backColor
+#ff8080
+ #RES      topShadowColor
+#ffc0c0
+ #RES      bottomShadowColor
+#c04040
+ #RES      labelString
+INPUT NUMBER KEY
+ #RES      vis
+1
+ #RES      y
+172
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       frame_game3
+ #TYPE       WSCtform
+ #PARENT   newwin000
+ #RES      x
+0
+ #RES      y
+0
+ #RES      width
+240
+ #RES      height
+300
+ #RES      foreColor
+#ffffff
+ #RES      backColor
+#ffc080
+ #RES      topShadowColor
+#ffffc0
+ #RES      bottomShadowColor
+#c08040
+ #RES      shadowType
+-1
+
+#OBJ       image2
+ #TYPE       WSCvimage
+ #PARENT   frame_game3
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#404040
+ #RES      bottomShadowColor
+#000000
+ #RES      vis
+1
+ #RES      y
+48
+ #RES      width
+240
+ #RES      height
+125
+
+#OBJ       btn_giveup3
+ #TYPE       WSCvfbtn
+ #PARENT   frame_game3
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_giveup3_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+>> GIVE UP & GO TO MENU <<
+ #RES      vis
+1
+ #RES      y
+276
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       frame_input2
+ #TYPE       WSCtform
+ #PARENT   frame_game3
+ #RES      x
+0
+ #RES      y
+197
+ #RES      width
+240
+ #RES      height
+78
+ #RES      foreColor
+#ffffff
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#000000
+ #RES      shadowType
+-1
+ #RES      vis
+1
+
+#OBJ       newvfbt_055
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input2
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#000000
+ #RES      bottomShadowColor
+#ffffff
+ #RES      labelString
+LOGIN
+ #RES      vis
+1
+ #RES      x
+70
+ #RES      y
+160
+ #RES      width
+120
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       newvfbt_056
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input2
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#000000
+ #RES      bottomShadowColor
+#ffffff
+ #RES      labelString
+LOGIN
+ #RES      vis
+1
+ #RES      x
+70
+ #RES      y
+160
+ #RES      width
+120
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       newvfbt_057
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input2
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#000000
+ #RES      bottomShadowColor
+#ffffff
+ #RES      labelString
+LOGIN
+ #RES      vis
+1
+ #RES      x
+70
+ #RES      y
+160
+ #RES      width
+120
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       num2_1
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input2
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num2_1_click.cpp
+
+ #RES      backColor
+#c0ffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#80c0c0
+ #RES      labelString
+1
+ #RES      vis
+1
+ #RES      x
+2
+ #RES      y
+2
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num2_2
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input2
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num2_2_click.cpp
+
+ #RES      backColor
+#c0ffc0
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#80c080
+ #RES      labelString
+2
+ #RES      vis
+1
+ #RES      x
+40
+ #RES      y
+2
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num2_3
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input2
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num2_3_click.cpp
+
+ #RES      backColor
+#c0ff80
+ #RES      topShadowColor
+#ffffc0
+ #RES      bottomShadowColor
+#80c040
+ #RES      labelString
+3
+ #RES      vis
+1
+ #RES      x
+78
+ #RES      y
+2
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num2_4
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input2
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num2_4_click.cpp
+
+ #RES      backColor
+#c0ff40
+ #RES      topShadowColor
+#ffff80
+ #RES      bottomShadowColor
+#80c000
+ #RES      labelString
+4
+ #RES      vis
+1
+ #RES      x
+116
+ #RES      y
+2
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num2_5
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input2
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num2_5_click.cpp
+
+ #RES      backColor
+#c0ff00
+ #RES      topShadowColor
+#ffff40
+ #RES      bottomShadowColor
+#80c000
+ #RES      labelString
+5
+ #RES      vis
+1
+ #RES      x
+154
+ #RES      y
+2
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num2_6
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input2
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num2_6_click.cpp
+
+ #RES      backColor
+#c0ff00
+ #RES      topShadowColor
+#ffff40
+ #RES      bottomShadowColor
+#80c000
+ #RES      labelString
+6
+ #RES      vis
+1
+ #RES      x
+2
+ #RES      y
+40
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num2_7
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input2
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num2_7_click.cpp
+
+ #RES      backColor
+#c0ff40
+ #RES      topShadowColor
+#ffff80
+ #RES      bottomShadowColor
+#80c000
+ #RES      labelString
+7
+ #RES      vis
+1
+ #RES      x
+40
+ #RES      y
+40
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num2_8
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input2
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num2_8_click.cpp
+
+ #RES      backColor
+#c0ff80
+ #RES      topShadowColor
+#ffffc0
+ #RES      bottomShadowColor
+#80c040
+ #RES      labelString
+8
+ #RES      vis
+1
+ #RES      x
+78
+ #RES      y
+40
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num2_9
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input2
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num2_9_click.cpp
+
+ #RES      backColor
+#c0ffc0
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#80c080
+ #RES      labelString
+9
+ #RES      vis
+1
+ #RES      x
+116
+ #RES      y
+40
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num2_0
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input2
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num2_0_click.cpp
+
+ #RES      backColor
+#c0ffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#80c0c0
+ #RES      labelString
+0
+ #RES      vis
+1
+ #RES      x
+154
+ #RES      y
+40
+ #RES      width
+36
+ #RES      height
+36
+ #RES      foreColor
+#000000
+
+#OBJ       num2_c
+ #TYPE       WSCvfbtn
+ #PARENT   frame_input2
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   num2_c_click.cpp
+
+ #RES      backColor
+#ff8040
+ #RES      topShadowColor
+#ffc080
+ #RES      bottomShadowColor
+#c04000
+ #RES      labelString
+CLR
+ #RES      vis
+1
+ #RES      x
+192
+ #RES      y
+2
+ #RES      width
+46
+ #RES      height
+74
+ #RES      foreColor
+#ff0000
+
+#OBJ       text_ans2
+ #TYPE       WSCvifield
+ #PARENT   frame_game3
+ #RES      emboss
+1
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      emboss
+1
+ #RES      labelString
+0
+ #RES      maxLength
+5
+ #RES      vis
+1
+ #RES      x
+137
+ #RES      y
+173
+ #RES      width
+103
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       label_timer2
+ #TYPE       WSCvlabel
+ #PARENT   frame_game3
+ #RES      backColor
+#ffc0c0
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c08080
+ #RES      vis
+1
+ #RES      x
+202
+ #RES      y
+24
+ #RES      width
+38
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       label_title2
+ #TYPE       WSCvlabel
+ #PARENT   frame_game3
+ #RES      backColor
+#c080c0
+ #RES      topShadowColor
+#ffc0ff
+ #RES      bottomShadowColor
+#804080
+ #RES      labelString
+* Space Pereption *
+ #RES      vis
+1
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       label_point2
+ #TYPE       WSCvlabel
+ #PARENT   frame_game3
+ #RES      backColor
+#80c0c0
+ #RES      topShadowColor
+#c0ffff
+ #RES      bottomShadowColor
+#408080
+ #RES      labelString
+0
+ #RES      vis
+1
+ #RES      x
+118
+ #RES      y
+24
+ #RES      width
+34
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       label_level2
+ #TYPE       WSCvlabel
+ #PARENT   frame_game3
+ #RES      userValue
+1
+ #RES      backColor
+#ffc080
+ #RES      topShadowColor
+#ffffc0
+ #RES      bottomShadowColor
+#c08040
+ #RES      labelString
+1
+ #RES      vis
+1
+ #RES      x
+39
+ #RES      y
+24
+ #RES      width
+32
+ #RES      height
+24
+ #RES      foreColor
+#0000ff
+
+#OBJ       msg2
+ #TYPE       WSCtform
+ #PARENT   frame_game3
+ #RES      x
+1
+ #RES      y
+85
+ #RES      width
+240
+ #RES      height
+57
+ #RES      foreColor
+#0000ff
+ #RES      backColor
+#4080ff
+ #RES      topShadowColor
+#80c0ff
+ #RES      bottomShadowColor
+#0040c0
+ #RES      shadowType
+-1
+
+#OBJ       msgok2
+ #TYPE       WSCvfbtn
+ #PARENT   msg2
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_msgok2_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+>> OK <<
+ #RES      vis
+1
+ #RES      y
+30
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       sdap2
+ #TYPE       WSCvlabel
+ #PARENT   msg2
+ #RES      backColor
+#008080
+ #RES      topShadowColor
+#40c0c0
+ #RES      bottomShadowColor
+#004040
+ #RES      vis
+1
+ #RES      y
+3
+ #RES      width
+240
+ #RES      height
+24
+
+#OBJ       newvlab_012
+ #TYPE       WSCvlabel
+ #PARENT   frame_game3
+ #RES      backColor
+#ffc040
+ #RES      topShadowColor
+#ffff80
+ #RES      bottomShadowColor
+#c08000
+ #RES      labelString
+GAME
+ #RES      vis
+1
+ #RES      y
+24
+ #RES      width
+43
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       newvlab_013
+ #TYPE       WSCvlabel
+ #PARENT   frame_game3
+ #RES      backColor
+#ff80c0
+ #RES      topShadowColor
+#ffc0ff
+ #RES      bottomShadowColor
+#c04080
+ #RES      labelString
+TIMER
+ #RES      vis
+1
+ #RES      x
+152
+ #RES      y
+24
+ #RES      width
+50
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       newvlab_014
+ #TYPE       WSCvlabel
+ #PARENT   frame_game3
+ #RES      backColor
+#c08040
+ #RES      topShadowColor
+#ffc080
+ #RES      bottomShadowColor
+#804000
+ #RES      labelString
+INPUT NUMBER KEY
+ #RES      vis
+1
+ #RES      y
+173
+ #RES      width
+137
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       newvlab_015
+ #TYPE       WSCvlabel
+ #PARENT   frame_game3
+ #RES      backColor
+#8080ff
+ #RES      topShadowColor
+#c0c0ff
+ #RES      bottomShadowColor
+#4040c0
+ #RES      labelString
+POINT
+ #RES      vis
+1
+ #RES      x
+71
+ #RES      y
+24
+ #RES      width
+47
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       timer2
+ #TYPE       WSCvtimer
+ #PARENT   frame_game3
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   timer2_timer.cpp
+
+ #RES      interval
+40
+ #RES      vis
+1
+ #RES      x
+124
+ #RES      y
+6
+
+#OBJ       timer_rand
+ #TYPE       WSCvtimer
+ #PARENT   newwin000
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   timer_rand_timer.cpp
+
+ #RES      interval
+20
+ #RES      running
+1
+ #RES      vis
+1
+ #RES      x
+24
+ #RES      y
+326
+ #RES      width
+116
+ #RES      height
+83
+
+#OBJ       frame_join
+ #TYPE       WSCtform
+ #PARENT   newwin000
+ #RES      x
+0
+ #RES      y
+0
+ #RES      width
+240
+ #RES      height
+300
+ #RES      foreColor
+#ffffff
+ #RES      backColor
+DEF13
+ #RES      topShadowColor
+DEF15
+ #RES      bottomShadowColor
+DEF16
+ #RES      shadowType
+-1
+
+#OBJ       btn_join_submit
+ #TYPE       WSCvfbtn
+ #PARENT   frame_join
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_join_submit_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+>> SUBMIT <<
+ #RES      vis
+1
+ #RES      y
+252
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       btn_joincancel
+ #TYPE       WSCvfbtn
+ #PARENT   frame_join
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_joincancel_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+>> CANCEL <<
+ #RES      vis
+1
+ #RES      y
+276
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       join_id
+ #TYPE       WSCvifield
+ #PARENT   frame_join
+ #RES      emboss
+1
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      emboss
+1
+ #RES      maxLength
+20
+ #RES      vis
+1
+ #RES      x
+60
+ #RES      y
+24
+ #RES      width
+111
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       join_pass
+ #TYPE       WSCvpifield
+ #PARENT   frame_join
+ #RES      emboss
+1
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      emboss
+1
+ #RES      maxLength
+20
+ #RES      vis
+1
+ #RES      x
+60
+ #RES      y
+48
+ #RES      width
+180
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       join_pass2
+ #TYPE       WSCvpifield
+ #PARENT   frame_join
+ #RES      emboss
+1
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      emboss
+1
+ #RES      maxLength
+20
+ #RES      vis
+1
+ #RES      x
+60
+ #RES      y
+72
+ #RES      width
+180
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       join_mail
+ #TYPE       WSCvifield
+ #PARENT   frame_join
+ #RES      emboss
+1
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      emboss
+1
+ #RES      maxLength
+40
+ #RES      vis
+1
+ #RES      x
+60
+ #RES      y
+96
+ #RES      width
+180
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       join_name
+ #TYPE       WSCvifield
+ #PARENT   frame_join
+ #RES      emboss
+1
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      emboss
+1
+ #RES      maxLength
+20
+ #RES      vis
+1
+ #RES      x
+60
+ #RES      y
+120
+ #RES      width
+180
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       newvlab_021
+ #TYPE       WSCvlabel
+ #PARENT   frame_join
+ #RES      backColor
+#c04080
+ #RES      topShadowColor
+#ff80c0
+ #RES      bottomShadowColor
+#800040
+ #RES      labelString
+JOIN
+ #RES      vis
+1
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       newvlab_022
+ #TYPE       WSCvlabel
+ #PARENT   frame_join
+ #RES      labelString
+ID
+ #RES      vis
+1
+ #RES      y
+24
+ #RES      width
+62
+ #RES      height
+24
+
+#OBJ       newvlab_023
+ #TYPE       WSCvlabel
+ #PARENT   frame_join
+ #RES      labelString
+PASS
+ #RES      vis
+1
+ #RES      y
+48
+ #RES      width
+62
+ #RES      height
+24
+
+#OBJ       newvlab_024
+ #TYPE       WSCvlabel
+ #PARENT   frame_join
+ #RES      labelString
+rePASS
+ #RES      vis
+1
+ #RES      y
+72
+ #RES      width
+62
+ #RES      height
+24
+
+#OBJ       newvlab_025
+ #TYPE       WSCvlabel
+ #PARENT   frame_join
+ #RES      labelString
+E-MAIL
+ #RES      vis
+1
+ #RES      y
+96
+ #RES      width
+62
+ #RES      height
+24
+
+#OBJ       newvlab_061
+ #TYPE       WSCvlabel
+ #PARENT   frame_join
+ #RES      labelString
+NAME
+ #RES      vis
+1
+ #RES      y
+120
+ #RES      width
+62
+ #RES      height
+24
+
+#OBJ       isdup
+ #TYPE       WSCvfbtn
+ #PARENT   frame_join
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   isdup_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+isDUP?
+ #RES      vis
+1
+ #RES      x
+171
+ #RES      y
+24
+ #RES      width
+69
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       newvlab_062
+ #TYPE       WSCvlabel
+ #PARENT   frame_join
+ #RES      labelString
+AGE
+ #RES      vis
+1
+ #RES      y
+144
+ #RES      width
+62
+ #RES      height
+24
+
+#OBJ       join_age
+ #TYPE       WSCvifield
+ #PARENT   frame_join
+ #RES      emboss
+1
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      emboss
+1
+ #RES      maxLength
+3
+ #RES      vis
+1
+ #RES      x
+60
+ #RES      y
+144
+ #RES      width
+180
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       msg_join
+ #TYPE       WSCtform
+ #PARENT   frame_join
+ #RES      x
+0
+ #RES      y
+80
+ #RES      width
+240
+ #RES      height
+57
+ #RES      backColor
+#008080
+ #RES      topShadowColor
+#40c0c0
+ #RES      bottomShadowColor
+#004040
+ #RES      shadowType
+-1
+
+#OBJ       errorjoin
+ #TYPE       WSCvlabel
+ #PARENT   msg_join
+ #RES      backColor
+#40c0c0
+ #RES      topShadowColor
+#80ffff
+ #RES      bottomShadowColor
+#008080
+ #RES      vis
+1
+ #RES      y
+3
+ #RES      width
+240
+ #RES      height
+24
+
+#OBJ       errorok
+ #TYPE       WSCvfbtn
+ #PARENT   msg_join
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   errorok_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+>> OK <<
+ #RES      vis
+1
+ #RES      y
+30
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       frame_lost
+ #TYPE       WSCtform
+ #PARENT   newwin000
+ #RES      x
+0
+ #RES      y
+0
+ #RES      width
+240
+ #RES      height
+300
+ #RES      foreColor
+#ffffff
+ #RES      backColor
+DEF13
+ #RES      topShadowColor
+DEF15
+ #RES      bottomShadowColor
+DEF16
+ #RES      shadowType
+-1
+
+#OBJ       btn_lostcancel
+ #TYPE       WSCvfbtn
+ #PARENT   frame_lost
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_lostcancel_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+>> BACK <<
+ #RES      vis
+1
+ #RES      y
+276
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       lost_name
+ #TYPE       WSCvifield
+ #PARENT   frame_lost
+ #RES      emboss
+1
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      emboss
+1
+ #RES      vis
+1
+ #RES      x
+60
+ #RES      y
+24
+ #RES      width
+180
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       lost_mail
+ #TYPE       WSCvifield
+ #PARENT   frame_lost
+ #RES      emboss
+1
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      emboss
+1
+ #RES      vis
+1
+ #RES      x
+60
+ #RES      y
+48
+ #RES      width
+180
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       lost_id
+ #TYPE       WSCvifield
+ #PARENT   frame_lost
+ #RES      emboss
+1
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      emboss
+1
+ #RES      vis
+1
+ #RES      x
+60
+ #RES      y
+124
+ #RES      width
+180
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       newvlab_045
+ #TYPE       WSCvlabel
+ #PARENT   frame_lost
+ #RES      backColor
+#c04080
+ #RES      topShadowColor
+#ff80c0
+ #RES      bottomShadowColor
+#800040
+ #RES      labelString
+FIND ID
+ #RES      vis
+1
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       newvlab_046
+ #TYPE       WSCvlabel
+ #PARENT   frame_lost
+ #RES      backColor
+#c04080
+ #RES      topShadowColor
+#ff80c0
+ #RES      bottomShadowColor
+#800040
+ #RES      labelString
+FIND PASS
+ #RES      vis
+1
+ #RES      y
+100
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       newvlab_047
+ #TYPE       WSCvlabel
+ #PARENT   frame_lost
+ #RES      labelString
+NAME
+ #RES      vis
+1
+ #RES      y
+24
+ #RES      width
+62
+ #RES      height
+24
+
+#OBJ       newvlab_048
+ #TYPE       WSCvlabel
+ #PARENT   frame_lost
+ #RES      labelString
+E-MAIL
+ #RES      vis
+1
+ #RES      y
+48
+ #RES      width
+62
+ #RES      height
+24
+
+#OBJ       newvlab_049
+ #TYPE       WSCvlabel
+ #PARENT   frame_lost
+ #RES      labelString
+ID
+ #RES      vis
+1
+ #RES      y
+124
+ #RES      width
+62
+ #RES      height
+24
+
+#OBJ       newvlab_050
+ #TYPE       WSCvlabel
+ #PARENT   frame_lost
+ #RES      labelString
+E-MAIL
+ #RES      vis
+1
+ #RES      y
+148
+ #RES      width
+62
+ #RES      height
+24
+
+#OBJ       lost_mail2
+ #TYPE       WSCvifield
+ #PARENT   frame_lost
+ #RES      emboss
+1
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      emboss
+1
+ #RES      vis
+1
+ #RES      x
+60
+ #RES      y
+148
+ #RES      width
+180
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       btn_findid
+ #TYPE       WSCvfbtn
+ #PARENT   frame_lost
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_findid_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+>> FIND ID <<
+ #RES      vis
+1
+ #RES      y
+72
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       btn_findpass
+ #TYPE       WSCvfbtn
+ #PARENT   frame_lost
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_findpass_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+>> SEND TO YOUR MAIL <<
+ #RES      vis
+1
+ #RES      y
+171
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       msg_lost
+ #TYPE       WSCtform
+ #PARENT   frame_lost
+ #RES      x
+3
+ #RES      y
+204
+ #RES      width
+235
+ #RES      height
+57
+ #RES      backColor
+#008080
+ #RES      topShadowColor
+#40c0c0
+ #RES      bottomShadowColor
+#004040
+ #RES      shadowType
+-1
+
+#OBJ       lostok
+ #TYPE       WSCvfbtn
+ #PARENT   msg_lost
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   lostok_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+>> OK <<
+ #RES      vis
+1
+ #RES      y
+30
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       errorlost
+ #TYPE       WSCvlabel
+ #PARENT   msg_lost
+ #RES      backColor
+#0080c0
+ #RES      topShadowColor
+#40c0ff
+ #RES      bottomShadowColor
+#004080
+ #RES      vis
+1
+ #RES      y
+3
+ #RES      width
+240
+ #RES      height
+24
+
+#OBJ       frame_myrecord
+ #TYPE       WSCtform
+ #PARENT   newwin000
+ #RES      x
+0
+ #RES      y
+0
+ #RES      width
+240
+ #RES      height
+300
+ #RES      foreColor
+#ffffff
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#404040
+ #RES      bottomShadowColor
+#000000
+ #RES      shadowType
+-1
+
+#OBJ       newvima_091
+ #TYPE       WSCvimage
+ #PARENT   frame_myrecord
+ #RES      shadowType
+-1
+ #RES      labelPixmap
+C:/popu/images/myrecord.png
+ #RES      vis
+1
+ #RES      width
+240
+ #RES      height
+300
+
+#OBJ       record_close
+ #TYPE       WSCvfbtn
+ #PARENT   frame_myrecord
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   btn_myrecordcancel_click.cpp
+
+ #RES      shadowThickness
+0
+ #RES      backColor
+#000000
+ #RES      topShadowColor
+#404040
+ #RES      bottomShadowColor
+#000000
+ #RES      labelPixmap
+C:/popu/images/btn12.png
+ #RES      vis
+1
+ #RES      x
+3
+ #RES      y
+266
+ #RES      width
+53
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       record1
+ #TYPE       WSCvfbtn
+ #PARENT   frame_myrecord
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   record1_click.cpp
+
+ #RES      shadowThickness
+0
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelPixmap
+C:/popu/images/btn9.png
+ #RES      vis
+1
+ #RES      x
+30
+ #RES      y
+60
+ #RES      width
+165
+ #RES      height
+25
+ #RES      foreColor
+#000000
+
+#OBJ       record2
+ #TYPE       WSCvfbtn
+ #PARENT   frame_myrecord
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   record2_click.cpp
+
+ #RES      shadowThickness
+0
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelPixmap
+C:/popu/images/btn10.png
+ #RES      vis
+1
+ #RES      x
+30
+ #RES      y
+105
+ #RES      width
+165
+ #RES      height
+25
+ #RES      foreColor
+#000000
+
+#OBJ       record3
+ #TYPE       WSCvfbtn
+ #PARENT   frame_myrecord
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   record3_click.cpp
+
+ #RES      shadowThickness
+0
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelPixmap
+C:/popu/images/btn11.png
+ #RES      vis
+1
+ #RES      x
+30
+ #RES      y
+150
+ #RES      width
+165
+ #RES      height
+25
+ #RES      foreColor
+#000000
+
+#OBJ       frmrecord1
+ #TYPE       WSCtform
+ #PARENT   frame_myrecord
+ #RES      x
+0
+ #RES      y
+45
+ #RES      width
+240
+ #RES      height
+255
+ #RES      backColor
+#ffc0ff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c080c0
+ #RES      shadowType
+-1
+
+#OBJ       newvlab_074
+ #TYPE       WSCvlabel
+ #PARENT   frmrecord1
+ #RES      backColor
+#ff4080
+ #RES      topShadowColor
+#ff80c0
+ #RES      bottomShadowColor
+#c00040
+ #RES      labelString
+CALCULATION RECORD
+ #RES      vis
+1
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       frmrecord1_close
+ #TYPE       WSCvfbtn
+ #PARENT   frmrecord1
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   frmrecord1_close_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+>> CLOSE <<
+ #RES      vis
+1
+ #RES      y
+231
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       newvlab_076
+ #TYPE       WSCvlabel
+ #PARENT   frmrecord1
+ #RES      backColor
+#ff4080
+ #RES      topShadowColor
+#ff80c0
+ #RES      bottomShadowColor
+#c00040
+ #RES      labelString
+DATE
+ #RES      vis
+1
+ #RES      x
+10
+ #RES      y
+30
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       newvlab_077
+ #TYPE       WSCvlabel
+ #PARENT   frmrecord1
+ #RES      backColor
+#ff4080
+ #RES      topShadowColor
+#ff80c0
+ #RES      bottomShadowColor
+#c00040
+ #RES      labelString
+POINT
+ #RES      vis
+1
+ #RES      x
+120
+ #RES      y
+30
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       frmrecord2
+ #TYPE       WSCtform
+ #PARENT   frame_myrecord
+ #RES      x
+0
+ #RES      y
+45
+ #RES      width
+240
+ #RES      height
+255
+ #RES      backColor
+#ffc0ff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c080c0
+ #RES      shadowType
+-1
+
+#OBJ       newvlab_082
+ #TYPE       WSCvlabel
+ #PARENT   frmrecord2
+ #RES      backColor
+#ff4080
+ #RES      topShadowColor
+#ff80c0
+ #RES      bottomShadowColor
+#c00040
+ #RES      labelString
+RETURNTIRE POWER RECORD
+ #RES      vis
+1
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       frmrecord2_close
+ #TYPE       WSCvfbtn
+ #PARENT   frmrecord2
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   frmrecord2_close_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+>> CLOSE <<
+ #RES      vis
+1
+ #RES      y
+231
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       newvlab_084
+ #TYPE       WSCvlabel
+ #PARENT   frmrecord2
+ #RES      backColor
+#ff4080
+ #RES      topShadowColor
+#ff80c0
+ #RES      bottomShadowColor
+#c00040
+ #RES      labelString
+DATE
+ #RES      vis
+1
+ #RES      x
+10
+ #RES      y
+30
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       newvlab_085
+ #TYPE       WSCvlabel
+ #PARENT   frmrecord2
+ #RES      backColor
+#ff4080
+ #RES      topShadowColor
+#ff80c0
+ #RES      bottomShadowColor
+#c00040
+ #RES      labelString
+POINT
+ #RES      vis
+1
+ #RES      x
+120
+ #RES      y
+30
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       frmrecord3
+ #TYPE       WSCtform
+ #PARENT   frame_myrecord
+ #RES      x
+0
+ #RES      y
+45
+ #RES      width
+240
+ #RES      height
+255
+ #RES      backColor
+#ffc0ff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c080c0
+ #RES      shadowType
+-1
+
+#OBJ       newvlab_087
+ #TYPE       WSCvlabel
+ #PARENT   frmrecord3
+ #RES      backColor
+#ff4080
+ #RES      topShadowColor
+#ff80c0
+ #RES      bottomShadowColor
+#c00040
+ #RES      labelString
+SPACE PEREPTION RECORD
+ #RES      vis
+1
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ffffff
+
+#OBJ       frmrecord3_close
+ #TYPE       WSCvfbtn
+ #PARENT   frmrecord3
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   frmrecord3_close_click.cpp
+
+ #RES      backColor
+#ffffff
+ #RES      topShadowColor
+#ffffff
+ #RES      bottomShadowColor
+#c0c0c0
+ #RES      labelString
+>> CLOSE <<
+ #RES      vis
+1
+ #RES      y
+231
+ #RES      width
+240
+ #RES      height
+24
+ #RES      foreColor
+#ff0000
+
+#OBJ       newvlab_089
+ #TYPE       WSCvlabel
+ #PARENT   frmrecord3
+ #RES      backColor
+#ff4080
+ #RES      topShadowColor
+#ff80c0
+ #RES      bottomShadowColor
+#c00040
+ #RES      labelString
+DATE
+ #RES      vis
+1
+ #RES      x
+10
+ #RES      y
+30
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       newvlab_090
+ #TYPE       WSCvlabel
+ #PARENT   frmrecord3
+ #RES      backColor
+#ff4080
+ #RES      topShadowColor
+#ff80c0
+ #RES      bottomShadowColor
+#c00040
+ #RES      labelString
+POINT
+ #RES      vis
+1
+ #RES      x
+120
+ #RES      y
+30
+ #RES      height
+24
+ #RES      foreColor
+#000000
+
+#OBJ       frame_sock
+ #TYPE       WSCtform
+ #PARENT   newwin000
+ #RES      x
+135
+ #RES      y
+352
+ #RES      width
+150
+ #RES      height
+70
+ #RES      vis
+1
+
+#OBJ       sock_run
+ #TYPE       WSCvbtn
+ #PARENT   frame_sock
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   sock_run_click.cpp
+
+ #RES      vis
+1
+ #RES      x
+28
+ #RES      y
+20
+
+#OBJ       sock_send
+ #TYPE       WSCvlabel
+ #PARENT   newwin000
+ #RES      maxLength
+256
+ #RES      vis
+1
+ #RES      x
+155
+ #RES      y
+364
+
+#OBJ       sock_recv
+ #TYPE       WSCvlabel
+ #PARENT   newwin000
+ #RES      maxLength
+256
+ #RES      vis
+1
+ #RES      x
+300
+ #RES      y
+378
+
+#OBJ       mainsock
+ #TYPE       WSCvcsocket
+ #PARENT   newwin000
+ #PROC  new_ep
+  #TRIG    2
+  #PRO   mainsock_sock.cpp
+
+ #RES      ip
+127.0.0.1
+ #RES      timeout
+0
+ #RES      vis
+1
+ #RES      x
+187
+ #RES      y
+408
+
+#OBJ       permition
+ #TYPE       WSCvlabel
+ #PARENT   newwin000
+ #RES      vis
+1
+ #RES      x
+49
+ #RES      y
+453
+ #RES      width
+310
+ #RES      height
+21
+

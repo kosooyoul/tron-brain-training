@@ -1,0 +1,53 @@
+ifndef BD
+  BD := /usr/local/te
+endif
+WS_INST_DIR = /usr/local
+WS_DEFAULT_DIR = /usr/local/ws
+GNUs = /usr
+GNU_BD = $(BD)/tool/Cygwin-i686
+GNUsh = $(GNU_BD)/sh-unknown-tkernel
+GCC_EXEC_PREFIX = $(GNU_BD)/lib/gcc-lib/
+ARCH = -DBTRON -DTE -ffreestanding -D_SH7727_ -DWS_EMBEDDED_CONFIG
+COMMONLIB = $(BD)/lib/sh3l
+COMMONLIB_DLL = $(BD)/lib/sh3l.dl
+CC1 = $(GNUsh)/bin/gccsh
+CC = $(GNUsh)/bin/gccsh
+STLD = $(GNUsh)/bin/gccsh
+AR = $(GNUsh)/bin/ar
+DEBUG = -g -ggdb -Wall -Wno-format -DDEBUG
+DEBUG2 = -O2 -Wall -Wno-format
+DEBUG_DLL = -g -ggdb -Wall -Wno-format -fPIC -DDEBUG
+DEBUG2_DLL = -O2 -Wall -Wno-format -fPIC
+OBJDIR = ./debug-te-sh7727
+OBJDIR2 = ./runtime-te-sh7727
+OBJDIR-st = ./debug-st-te-sh7727
+OBJDIR2-st = ./runtime-st-te-sh7727
+C++FLAGS = $(DEBUG) -DFUNCPROTO -DXTFUNCPROTO $(INCLUDE) $(ARCH)
+C++FLAGS2 = $(DEBUG2) -DFUNCPROTO -DXTFUNCPROTO $(INCLUDE) $(ARCH)
+C++FLAGS_DLL = $(DEBUG_DLL) -DFUNCPROTO -DXTFUNCPROTO $(INCLUDE) $(ARCH)
+C++FLAGS2_DLL = $(DEBUG2_DLL) -DFUNCPROTO -DXTFUNCPROTO $(INCLUDE) $(ARCH)
+STFLAGS = -r -nostdlib
+RANLIB = ranlib
+SHARED = -shared -Wl,-soname,
+KINPUT2 =
+LIBS =  -L../../lib -lws -lwsc -lwsx11 -lwsb -lwsad -lpthread -Wl,--defsym,_usemt_=1
+LIBSD =  -L../../lib -lwsd -lwscd -lwsx11d -lwsbd -lwsadd -lpthread -Wl,--defsym,_usemt_=1
+XINCS = 
+XLIBS = 
+INCJPG =
+LIBJPG = -L/usr/X11R6/lib -ljpeg 
+INCPNG =
+LIBPNG = -L/usr/X11R6/lib -lpng -lz
+INCXPM =
+LIBXPM = -L/usr/X11R6/lib -lXpm
+STRIP = echo
+LIBM = -lm
+SOCKLIB = 
+EXTLIB =
+SJISFIX = $(WSDIR)/bin/sjisfix
+EUCKRFIX = $(WSDIR)/bin/euckrfix
+RM = rm.exe
+
+PATH := .:$(GNUsh)/bin:/usr/local/bin:/bin:/usr/bin
+
+.EXPORT_ALL_VARIABLES:

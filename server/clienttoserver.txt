@@ -1,0 +1,38 @@
+1. 로그인(ID, 비밀번호)
+    #login char[20], char[20]
+
+2. 로그아웃(0)
+    #logout 0
+
+3. ID찾기(사용자 이름, 사용자 메일 주소)
+    #findid char[20], char[40]
+
+4. 비밀번호 찾기(사용자ID, 사용자 메일 주소)
+    #findpass char[20], char[40]
+
+5. 사용자등록(ID, 비밀번호, 사용자 이름, 사용자 메일 주소, 나이)
+    #join char[20], char[20], char[20], char[40], int
+
+6. 중복 ID확인(ID)
+    #dupid char[20]
+
+7. 점수 확인(게임 번호)
+    #record int
+
+8. 오늘기록여부(게임 번호)
+    #today int
+
+9. 점수저장(게임번호, 점수)
+    #save int, int
+
+10. 게임별 수준(나이)얻기(0)
+    #average 0
+
+11. 사용자정보읽음(0)
+    #getinfo 0
+
+12. 사용자정보수정(ID, 이전비밀번호, 변경될비밀번호, 이름, 메일주소, 나이)
+    #setinfo char[20], char[20], char[20], char[20], char[40], int
+
+13. 탈퇴(ID, 비밀번호)
+    #leave char[20], char[20]

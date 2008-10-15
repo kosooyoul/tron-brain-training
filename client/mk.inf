@@ -1,0 +1,109 @@
+##########################################
+# compiler flags                         #
+##########################################
+
+DEBUG = -Wall -Wno-format -fPIC -O1 
+
+DBGRM = $(RM)
+
+##########################################
+# setting of includes                    #
+##########################################
+
+ALL_INCLUDES = -I. -I'$(WSDIR)/include' -I'$(WS_DEFAULT_DIR)/include' -I'$(BD)/include' -I'$(BD)/include/unix' 
+
+##########################################
+# setting of libraries                   #
+##########################################
+
+ALL_LIBS =   -lwsbtron -L'$(BD)/lib/sh3l' -L'$(WSDIR)/lib/lib-te-sh7727' -L'$(WS_DEFAULT_DIR)/lib/lib-te-sh7727' -lwsr -lwsb -lwsc -lws -lwsbtron -lsupc++ -lapp -Wl,-\( -lg -lbt -Wl,-\) -lgcc -ltf -limg -lsvc -lwsb -lwsc -lws -lg -Wl,--defsym,_usemt_=1 -lwsb -lwsc -lwsc
+
+ALL_LIBS2 =   -lwsbtron -L'$(BD)/lib/sh3l' -L'$(WS_DEFAULT_DIR)/lib/lib-te-sh7727' -L'$(WS_DEFAULT_DIR)/lib/lib-te-sh7727' -lwsr -lwsb -lwsc -lws -lwsbtron -lsupc++ -lapp -Wl,-\( -lg -lbt -Wl,-\) -lgcc -ltf -limg -lsvc -lwsb -lwsc -lws -lg -Wl,--defsym,_usemt_=1 -lwsb -lwsc -lwsc
+
+##########################################
+# setting of window                      #
+##########################################
+
+WINOBJ = newproject.o \
+        newwin000.o 
+
+OPOBJ = \
+        num1_1_click.o \
+        num1_2_click.o \
+        num1_3_click.o \
+        num1_4_click.o \
+        num1_5_click.o \
+        num1_6_click.o \
+        num1_7_click.o \
+        num1_8_click.o \
+        num1_9_click.o \
+        num1_0_click.o \
+        num1_c_click.o \
+        btn_giveup1_click.o \
+        btn_msgok1_click.o \
+        timer1_timer.o \
+        btn_login_click.o \
+        btn_join_click.o \
+        btn_lost_click.o \
+        btn_game1_click.o \
+        btn_game2_click.o \
+        btn_game3_click.o \
+        btn_gotoindex_click.o \
+        btn_myrecord_click.o \
+        btn_giveup2_click.o \
+        num3_1_click.o \
+        num3_2_click.o \
+        num3_3_click.o \
+        num3_4_click.o \
+        num3_5_click.o \
+        num3_6_click.o \
+        num3_7_click.o \
+        num3_8_click.o \
+        num3_9_click.o \
+        num3_0_click.o \
+        num3_c_click.o \
+        timer3_timer.o \
+        btn_msgok3_click.o \
+        btn_giveup3_click.o \
+        num2_1_click.o \
+        num2_2_click.o \
+        num2_3_click.o \
+        num2_4_click.o \
+        num2_5_click.o \
+        num2_6_click.o \
+        num2_7_click.o \
+        num2_8_click.o \
+        num2_9_click.o \
+        num2_0_click.o \
+        num2_c_click.o \
+        btn_msgok2_click.o \
+        timer2_timer.o \
+        timer_rand_timer.o \
+        btn_join_submit_click.o \
+        btn_joincancel_click.o \
+        isdup_click.o \
+        errorok_click.o \
+        btn_lostcancel_click.o \
+        btn_findid_click.o \
+        btn_findpass_click.o \
+        lostok_click.o \
+        btn_myrecordcancel_click.o \
+        record1_click.o \
+        record2_click.o \
+        record3_click.o \
+        frmrecord1_close_click.o \
+        frmrecord2_close_click.o \
+        frmrecord3_close_click.o \
+        sock_run_click.o \
+        mainsock_sock.o 
+
+OBJS = $(WINOBJ) $(OPOBJ)  
+
+##########################################
+# setting of target binary               #
+##########################################
+
+TARGET = newproject
+
+CC='$(GNUsh)/bin/gccsh'
+CXX='$(GNUsh)/bin/gccsh'

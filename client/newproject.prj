@@ -1,0 +1,94 @@
+#ID
+55707B20
+#STLINK
+0
+#CMODE
+0
+#OUTPUT
+newproject
+#STOUTPUT
+newproject
+#DBG_OUTPUT
+newprojectd
+#DBG_STOUTPUT
+newprojectd
+#DTHICKNESS
+2
+#GRIDX
+1
+#GRIDY
+1
+#DWIDTH
+100
+#DHEIGHT
+30
+#WS_DLL
+
+#WINC_NAME
+WSCmainWindow
+#OBJS
+
+#COMPAT
+4
+#WS_FILES
+
+#MPFC_COMPAT
+0
+#JAVA_PKG_NAME
+
+#ENCODING
+EUCKR
+#POLICY
+
+#LIB_CREATE
+0
+#LANG
+C++
+#MAKE
+cygwin-make
+#CC1
+'$(GNUsh)/bin/gccsh'
+#CC
+'$(GNUsh)/bin/gccsh'
+#LD
+'$(GNUsh)/bin/gccsh'
+#USER_INCLUDE
+-I. -I'$(WSDIR)/include' -I'$(WS_DEFAULT_DIR)/include' -I'$(BD)/include' -I'$(BD)/include/unix'
+#USER_FL
+-Wall -Wno-format -fPIC
+#USER_RT_INCLUDE
+
+#USER_RT_FL
+-O1 
+#USER_DBG_INCLUDE
+
+#USER_DBG_FL
+-g -ggdb
+#USER_LIB
+
+#USER_LD_FL
+
+#USER_RT_LIB
+-L'$(BD)/lib/sh3l' -L'$(WSDIR)/lib/lib-te-sh7727' -L'$(WS_DEFAULT_DIR)/lib/lib-te-sh7727' -lwsr -lwsb -lwsc -lws -lwsbtron -lsupc++ -lapp -Wl,-\( -lg -lbt -Wl,-\) -lgcc -ltf -limg -lsvc -lwsb -lwsc -lws -lg -Wl,--defsym,_usemt_=1
+#USER_DBG_LIB
+-L'$(BD)/lib/sh3l' -L'$(WSDIR)/lib/lib-te-sh7727' -L'$(WS_DEFAULT_DIR)/lib/lib-te-sh7727' -lwsr -lwsb -lwsc -lws -lwsbtron -lsupc++ -lapp -Wl,-\( -lg -lbt -Wl,-\) -lgcc -ltf -limg -lsvc -lwsb -lwsc -lws -lg -Wl,--defsym,_usemt_=1
+#USER_RT_STLIB
+-L'$(BD)/lib/sh3l' -L'$(WSDIR)/lib/lib-te-sh7727' -L'$(WS_DEFAULT_DIR)/lib/lib-te-sh7727' -lwsr -lwsb -lwsc -lws -lwsbtron -lsupc++ -lapp -Wl,-\( -lg -lbt -Wl,-\) -lgcc -ltf -limg -lsvc -static -lwsb -lwsc -lws -lg -Wl,--defsym,_usemt_=1
+#USER_DBG_STLIB
+-L'$(BD)/lib/sh3l' -L'$(WSDIR)/lib/lib-te-sh7727' -L'$(WS_DEFAULT_DIR)/lib/lib-te-sh7727' -lwsr -lwsb -lwsc -lws -lwsbtron -lsupc++ -lapp -Wl,-\( -lg -lbt -Wl,-\) -lgcc -ltf -limg -lsvc -static -lwsb -lwsc -lws -lg -Wl,--defsym,_usemt_=1
+#FONT0
+14 60c6
+#FONT1
+16 60c6
+#FONT2
+18 60c6
+#FONT3
+20 60c6
+#FONT4
+22 60c6
+#FONT5
+24 60c6
+#FONT6
+26 60c6
+#FONT7
+30 60c6

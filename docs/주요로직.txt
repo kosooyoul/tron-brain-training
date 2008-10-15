@@ -1,0 +1,77 @@
+<주요함수 1. 메시지 분류 함수 VB>
+
+Function Answer()
+    Dim MSG As String			'요청메시지
+    Dim IN_CMD As String		'요청사항
+    Dim UserNumber As Integer		'유저번호
+    Dim UserCMDID As Long		'소켓번호
+    Dim ACK As String			'응답메시지
+    Dim INSTR_TEMP As Integer		'임시
+
+    '메시지를 큐로부터 꺼내 MSG로 복사
+    GetRequest()
+    MSG = GetCurrentRequest()
+    
+    '공백이 아닐 경우 메시지 처리
+    If MSG <> "" Then
+	'메시지로부터 유저번호와 소켓번호를 추출
+        UserNumber = Val(Left(MSG, 2))
+        UserCMDID = Val(Mid(MSG, 1, 8))
+        
+        '현재 접속중인 유저인지?(클라이언트가 처리중 종료시) / 현재 소켓번호와 ID가 동일한지?(종료후 다른 클라이언트가 해당 소켓으로 접속시)
+        If FindUser(UserNumber) And iUser(UserNumber).RequestID = UserCMDID Then
+            MSG = Mid(MSG, InStr(MSG, "#"))
+            INSTR_TEMP = InStr(MSG, " ")
+
+            If INSTR_TEMP Then
+		'요청사항 추출
+                IN_CMD = Mid(MSG, 2, INSTR_TEMP - 2)
+                
+                Select Case Trim(IN_CMD)
+                    Case "login"    '로그인
+                        ACK = A_Login(UserNumber, MSG)
+                    Case "logout"   '로그아웃
+                        ACK = A_Logout(UserNumber, MSG)
+                    Case "findid"   '아이디찾기
+                        ACK = A_FindID(UserNumber, MSG)
+                    Case "findpass" '암호찾기
+                        ACK = A_FindPass(UserNumber, MSG)
+                    Case "join"     '사용자등록
+                        ACK = A_Join(UserNumber, MSG)
+                    Case "dupid"    '중복아이디확인
+                        ACK = A_DupID(UserNumber, MSG)
+                    Case "record"   '점수확인
+                        ACK = A_Record(UserNumber, MSG)
+                    Case "today"    '오늘 점수기록했는지 확인
+                        ACK = A_Today(UserNumber, MSG)
+                    Case "save"     '오늘 점수저장
+                        ACK = A_Save(UserNumber, MSG)
+                    Case "average"  '테스트 나이확인
+                        ACK = A_Average(UserNumber, MSG)
+                    Case "getinfo"  '자신의 정보보기
+                        ACK = A_GetInfo(UserNumber, MSG)
+                    Case "setinfo"  '자신의 정보수정
+                        ACK = A_SetInfo(UserNumber, MSG)
+                    Case "leave"    '탈퇴
+                        ACK = A_Leave(UserNumber, MSG)
+                End Select
+                
+                '오류이거나 응답할수 없는 경우x
+                If Trim(ACK) <> "" Then
+                    frmMain.ServerToClient UserNumber, ACK
+                End If
+            Else
+		'로그추가
+                AddLog "SERVER > 요청메시지에 인수가 없어 무시함 : " & MSG
+            End If
+         Else
+	     '로그추가
+             AddLog "SERVER > 수신자가 접속을 끊었으므로 요청메시지 처리 안함 : " & MSG
+         End If
+    End If
+    
+End Function
+
+
+
+

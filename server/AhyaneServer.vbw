@@ -1,0 +1,14 @@
+isButton = 66, 66, 606, 547, C, 0, 0, 582, 481, C
+ConnectDatabase = 7, 107, 705, 497, 
+frmMain = 198, 198, 738, 679, , 0, 0, 824, 659, C
+frmUser = 176, 176, 716, 657, C, 110, 110, 650, 591, C
+ProcessRequest = 154, 154, 694, 635, Z
+RequestModule = 132, 132, 720, 613, C
+frmRecord = 88, 88, 782, 569, C, 66, 66, 760, 547, C
+MainProgram = 0, 0, 665, 481, 
+frmIndex = 0, 0, 699, 481, C, 32, 57, 731, 538, C
+frmSetServer = 198, 261, 820, 822, C, 66, 66, 635, 547, C
+frmSetProcessTimer = 110, 110, 694, 591, C, 88, 88, 672, 569, C
+frmProgramOption = 110, 145, 665, 704, C, 88, 88, 672, 569, C
+frmProgramInfo = 88, 116, 710, 677, C, 88, 88, 672, 569, C
+frmSCProtocol = 0, 0, 555, 561, C, 176, 232, 731, 793, C
